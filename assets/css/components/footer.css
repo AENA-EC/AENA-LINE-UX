@@ -1,0 +1,39 @@
+.c-footer{
+  position: relative;
+  height: 260px;
+  width: 100%;
+}
+
+.c-footer__img{
+  width: 100%;
+  max-width: 351px;
+}
+
+.c-footer__label{
+  position: absolute;
+  max-width: 326px;
+  width: 90%;
+  height: 63px;
+  background-color: #E43C00;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  top: 125px;
+  left: 6%;
+  padding: 16px 0;
+}
+
+.c-footer__line{
+  border-top: 5px solid #EA5404;
+}
+
+.c-footer__text{
+  position: absolute;
+  font-size: 13px;
+  font-weight: bold;
+  color: #EA5404;
+  top: 95px;
+  left: 18%;
+}

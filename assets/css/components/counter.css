@@ -1,0 +1,36 @@
+.c-counter{
+  position: fixed;
+  right: 17px;
+  bottom: 60px;
+  width: 77px;
+  height: 77px;
+  box-shadow: 0px 3px 6px #0000006F;
+  margin: 0 0 0 auto;
+  border-radius: 50%;
+  z-index: 1000;
+  background: linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 45px,#E43C00 45px,#E43C00 100%);
+}
+
+.c-counter__icon{ 
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  width: 77px;
+  height: 77px;
+  box-shadow: 0px 3px 6px #0000006F;
+  border-radius: 50%;
+  background: linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 45px,#E43C00 45px,#E43C00 100%);
+}
+
+.c-counter__num{
+  text-align: center;
+  font-weight: bold;
+  padding: 9px 0;
+  color:#E43C00;
+}
+
+.c-counter__text{
+  font-size: 10px;
+  text-align: center ;
+  color: #FFFFFF;
+}

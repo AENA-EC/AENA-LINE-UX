@@ -1,0 +1,283 @@
+@import url("../foundations/destyle.css");
+@import url("../layouts/layout.css");
+@import url("../components/header.css");
+@import url("../components/card.css");
+@import url("../components/footer.css");
+@import url("../components/linkArea.css");
+@import url("../components/counter.css");
+@import url("../utilities/text.css");
+@import url("../utilities/margin.css");
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* MEMO: コンポーネントに移す可能性あり */
+.p-head{
+  position: relative;
+  margin: auto;
+  height: 187px;
+  width: 320px;
+}
+
+.p-head__text {
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 0px 17px;
+}
+
+.p-head__text--small {
+  font-size: 12px;
+}
+
+.p-head__text--center {
+  text-align: center;
+}
+
+.p-head__icon{
+  margin: 30px 30px 15px 30px;
+}
+
+.p-headIcon--xs{
+  margin-left: 153px;
+}
+
+.p-head__image {
+  position: absolute;
+  right: 3px;
+  width: 44%;
+  bottom: 0px;
+}
+
+.p-announceSub{
+  height: 30px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.p-announceSub--green{
+  width: 72px;
+  background-color: #008D79;
+  margin: 3px 18px 3px 0;
+}
+
+.p-announceSub--orange{
+  width: 80px;
+  background-color: #E43C00;
+  margin: 3px 10px 3px 0;
+}
+
+.p-announceSub--hide{
+  background-color: unset;
+}
+
+.p-announcePar{
+  margin-left: 88px;
+  margin-bottom: 10px;
+}
+
+.p-announceText{
+  font-size: 19px;
+  font-weight: bold;
+  color: #008D79;
+  align-self: center;
+}
+
+.p-board{
+  max-width: 335px;
+  height: 388px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.p-boardBtn{
+  width: 88%;
+  height: 48px;
+  border: 2px solid #008D79;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #008D79;
+  margin: -20px 20px 0px 20px;
+  font-weight: bold;
+}
+
+.p-boardIcon{
+  margin-right: 10px;
+}
+
+.p-border{
+  align-items: center;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+}
+
+.p-border::after{
+  content: "";
+  margin-left: 5px;
+  border-top: 1px solid #C7C7C7;
+  width: 5px;
+  flex-grow: 0.8;
+}
+
+.p-boardItem{
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.p-boardList{
+  display: flex;
+  margin: 0px 24px;
+}
+
+.p-boardPar{
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 12px;
+  color: #646464;
+  margin-left: 65px;
+  line-height: 20px;
+}
+
+.p-boardTitle{
+  display: flex;
+  padding: 20px 30px 15px 30px;
+}
+
+.p-boardTitleIcon{
+  margin-right: 10px;
+}
+
+.p-boardTitleText{
+  text-align: left;
+  font-size: 28px;
+  color: #646464;
+  font-weight: bold;
+}
+
+.p-boardUnderline--yellow{
+  background: linear-gradient(transparent 70%, yellow 50%);
+}
+
+.p-capArea{
+  position: relative;
+  height: 230px;
+}
+
+.p-capAreaText{
+  color: #008D79;
+  font-weight: bold;
+  padding-left: 115px;
+  font-size: 18px;
+}
+
+.p-couponSample {
+  width: 286px;
+  padding-top: 20px;
+}
+
+.p-guide--bold{
+  font-weight: bold;
+}
+
+.p-guide--flex{
+  display: flex;
+}
+
+.p-label{
+  height: 47px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: auto;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.p-lectureAlpha{
+  background-color: #FFFFFF;
+  border: 1px solid #707070;
+  font-size: 28px;
+  color: #E43C00;
+  width: 49px;
+  height: 47px;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  }
+
+.p-lectureCoupIcon{
+  position: absolute;
+  left: 150px;
+  top: 35px;
+}
+
+.p-lectureFinIcon{
+  position: absolute;
+  top: 105px;
+  left: 190px;
+  width: 108px;
+}
+
+.p-lectureFinIcon--small{
+  position: absolute;
+  top: 110px;
+  left: 45px;
+  height: 74px;
+  width: 74px;
+}
+
+.p-lectureHead{
+  font-size: 20px;
+  color: #008D79;
+  font-weight: bold;
+  margin: auto 0;
+}
+
+.p-lectureLead{
+  width: 153px;
+  height: 29px;
+  border: 2px solid #E43C00;
+  color: #E43C00;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2px 0;
+  margin-left: 6px;
+  margin-bottom: 5px;
+}
+
+.p-lectureNum{
+  font-size: 40px;
+  color: #008D79;
+  font-weight: bold;
+}
+
+.p-lectureSub{
+  width: 323px;
+  height: 55px;
+  background-color: #E43C00;
+  position: relative;
+  padding: 17px 0px 17px 60px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.p-par{
+  font-size: 14px;
+  color: #838383;
+  line-height: 20px;
+  padding-left: 2px;
+}

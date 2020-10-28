@@ -1,0 +1,32 @@
+.l-main{
+  padding: 17px;
+  max-width: 375px;
+  margin: auto;
+}
+
+.l-main--gray{
+  background-color: #EFEFEF;
+  padding: 17px;
+  width: 100%;
+  margin: auto;
+}
+
+.l-main--green{
+  background-color:  #008D79;
+  border: 1px solid #707070;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.l-main--orange{
+  background-color: #E43C00;
+  width: 100%;
+  margin: auto;
+}
+
+.l-sub--green{
+  background-color:  #008D79;
+  max-width: 320px;
+  margin: auto;
+}

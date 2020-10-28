@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全てのクーポン</title>
+  <link rel="stylesheet" href="../assets/css/pages/all_coupon.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script src='../assets/js/pages/all_coupon.js'></script>
+
+</head>
+<body>
+  <header class="c-header">
+    <button class="c-header__btn">戻る</button>
+    <h1 class="c-header__text">全てのクーポン</h1>
+  </header>
+
+  <div id='main' class="l-main">
+    <div class="c-topic u-mb-8">
+      <span class="c-topic__mainText">全てのクーポン</span><br/>
+      <span class="c-topic__subText">現在利用できる新着順のクーポン</span>
+    </div>
+
+    <div class='u-mb-20'>
+      <div class="u-mb-16">
+        <div class="c-card__labelContainer">
+          <div class="c-card__label c-card__label--red">
+            <img src="../assets/image/icon_timer.png" class="c-card__labelIcon">
+            <span class="c-card__text">あと１日</span>
+          </div>
+          <div class="c-card__label c-card__label--yellow">
+            <img src="../assets/image/icon_triangle.png" class="c-card__labelIcon">
+            <span class="c-card__text">売り切れ間近</span>
+          </div>
+        </div>
+        <div class="c-card__main">
+          <img class='c-card__image' src='https://placehold.jp/350x350.png'/>
+          <button data-modal-id='modal-1' class="c-card__btn">お気に入りに追加</button>
+        </div>
+      </div>
+
+      <button class="c-button">
+          <img src="../assets/image/icon_cart.png" class="c-button__icon">
+          <span class="c-button__text">取置・オンラインで購入</span>
+      </button>
+    </div>
+
+    <div class='u-mb-20'>
+      <div class="u-mb-16">
+        <div class="c-card__labelContainer">
+          <div class="c-card__label c-card__label--red">
+            <img src="../assets/image/icon_timer.png" class="c-card__labelIcon">
+            <span class="c-card__text">あと１日</span>
+          </div>
+          <div class="c-card__label c-card__label--yellow">
+            <img src="../assets/image/icon_triangle.png" class="c-card__labelIcon">
+            <span class="c-card__text">売り切れ間近</span>
+          </div>
+        </div>
+        <div class="c-card__main">
+          <img class='c-card__image' src='https://placehold.jp/350x350.png'/>
+          <button data-modal-id='modal-2' class="c-card__btn">お気に入りに追加</button>
+        </div>
+      </div>
+
+      <button class="c-button">
+          <img src="../assets/image/icon_cart.png" class="c-button__icon">
+          <span class="c-button__text">取置・オンラインで購入</span>
+      </button>
+    </div>
+
+    <div class="c-counter">
+      <div class="c-counter__num">
+        <span class="u-fs-30">3</span><span>枚</span>
+      </div>
+      <div class="c-counter__text">
+        <span>お気に入り</span>
+      </div>
+    </div>
+
+    <!-- リンクバナー -->
+    <div class="c-linkArea c-linkArea--green c-linkArea--flex u-mb-24">
+      <div>
+        <div class="c-linkArea__title">激安商品ランキング</div>
+        <div class="c-linkArea__label c-linkArea__label--green">お買い得クーポンを見る</div>
+      </div>
+      <div class="c-linkArea__icon">
+        <img src="../assets/image/cheap_ranking.png" class="c-linkArea__img"/>
+      </div>
+    </div>
+    <div class="c-linkArea c-linkArea--orange c-linkArea--flex u-mb-24">
+      <div>
+        <div class="c-linkArea__title">人気ランキング</div>
+        <div class="c-linkArea__label c-linkArea__label--orange">人気のクーポンを見る</div>
+      </div>
+      <div class="c-linkArea__icon">
+        <img src="../assets/image/popular_ranking.png" class="c-linkArea__img"/>
+      </div>
+    </div>
+    <div class="c-linkArea c-linkArea--red c-linkArea--flex u-mb-24">
+      <div>
+        <div class="c-linkArea__title">終了間近</div>
+        <div class="c-linkArea__label c-linkArea__label--red">締切間近のクーポンを見る</div>
+      </div>
+      <div class="c-linkArea__icon">
+        <img src="../assets/image/end_coupon.png" class="c-linkArea__img"/>
+      </div>
+    </div>
+    <div class="c-linkArea--flex">
+      <div class="c-linkArea__text">全てのクーポンを見る</div>
+      <img src="../assets/image/arrow_blue.png" />
+    </div>
+  </div>
+
+  <!-- モーダルのhtmlを記述 -->
+  <div class="c-modals">
+    <div id='modal-1' class="c-modal">
+      <button class="c-modal__closeBtn">✕</button>
+      <div class="c-modal__topic">
+        <span class="c-modal__mainText">オンラインで購入</span>
+      </div>
+      <img class="c-modal__image" src="http://placehold.jp/253x230.png"/>
+      <div class="c-modal__text">店舗で受取る</div>
+      <div class="c-modal__btn">店舗で取置する</div>
+      <div class="c-modal__text">ウェブで購入</div>
+      <div class="c-modal__btn">公式オンラインショップで購入</div>
+      <div class="c-modal__btn">Amazonで購入</div>
+      <div class="c-modal__btn">楽天で購入</div>
+    </div>
+
+    <!-- モーダルのhtmlを記述 終了間際version-->
+    <div id='modal-2' class="c-modal">
+      <button class="c-modal__closeBtn">✕</button>
+      <div class="c-modal__alert">
+        <span class="c-modal__mainText">終了間際の商品です！！</span>
+      </div>
+      <p class="c-model__par">
+        いまお気に入りに追加したクーポンは<br/>
+        終了日が間際の商品です。<br/>
+        店舗で取置、または<br/>
+        ウェブでの購入がおすすめです
+      </p>
+      <img class="c-modal__image--sm" src="http://placehold.jp/161x147.png"/>
+      <div class="c-modal__text">店舗で受取る</div>
+      <div class="c-modal__btn">店舗で取置する</div>
+      <div class="c-modal__text">ウェブで購入</div>
+      <div class="c-modal__btn">公式オンラインショップで購入</div>
+      <div class="c-modal__btn">Amazonで購入</div>
+      <div class="c-modal__btn">楽天で購入</div>
+    </div>
+  </div>
+
+  <menu class="c-menu">
+    <ul class="c-menu__list">
+      <li class="c-menu__box">
+        <a href="all_coupon.html" title="全て"><p class="c-menu__text">全て</p></a>
+      </li>
+      <li class="c-menu__box">
+        <a href="cheap_ranking.html" title="激安"><p class="c-menu__text">激安</p></a>
+      </li>
+      <li class="c-menu__box">
+        <a href="popular_ranking.html" title="人気"><p class="c-menu__text">人気</p></a>
+      </li>
+      <li class="c-menu__box">
+        <a href="end_coupon.html" title="終了間際"><p class="c-menu__text">終了間際</p></a>
+      </li>
+      <li class="c-menu__box">
+        <a href="classic_coupon.html" title="定番"><p class="c-menu__text">定番</p></a>
+      </li>
+    </ul>
+  </menu>
+  <footer class="c-footer">
+    <div class="c-footer__line"></div>
+    <img src="../assets/image/footer.png" class="c-footer__img"/>
+    <div class="c-footer__text">
+      オンラインショップなら今すぐ購入できます
+    </div>
+    <div class="c-footer__label">
+      公式オンラインショップ
+    </div>
+  </footer>
+</body>
+</html>

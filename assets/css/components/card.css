@@ -1,0 +1,105 @@
+.c-cardContainer--blue {
+  position: relative;
+}
+
+.c-cardContainer--blue::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  min-width: 320px;
+  width: 110%;
+  height: 390px;
+  transform: translateX(-50%) skewY(4deg);
+  background-color: #220E64;
+}
+
+.c-card {
+  position: relative;
+  z-index: 1;
+}
+
+.c-card__btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.c-card__caution{
+  font-size: 14px;
+  color: #FFFFFF;
+  width: 294px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.c-card__cautionIcon{
+  width: 21px;
+  height: 21px;
+}
+
+.c-card__image {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+}
+
+.c-card__btn{
+  height: 42px;
+  width: 100%;
+  background-color: #E43C00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 0px 8px 8px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.c-button__btn--gray{
+  background-color: #BFBFBF;
+}
+
+.c-card__label{
+  height: 33px;
+  text-align: center;
+  margin-right: 8px;
+  padding: 7px 0;
+}
+
+.c-card__labelIcon{
+  margin: -1px;
+  width: 20px;
+  height: 20px;
+}
+
+.c-card__labelContainer{
+  height: 33px;
+  display: flex;
+}
+
+.c-card__label--red{
+  width: 102px;
+  background-color: #F44D4D;
+}
+
+.c-card__label--yellow{
+  width: 122px;
+  background-color: #E2C800;
+}
+
+.c-card__main{
+  max-width: 340px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px #00000029;
+  margin-bottom: -4px;
+  margin-top: -4px;
+}
+
+.c-card__text{
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+  vertical-align: top;
+}

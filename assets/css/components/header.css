@@ -1,0 +1,59 @@
+.c-header{
+  height: 56px;
+  box-shadow: 0px 3px 6px #00000029;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.c-header__btn{
+  width: 50px;
+  height: 32px;
+  background: #E43C00;
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  padding: 4px 8px 7px 8px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.c-header__btn:after {
+  content: "";
+  border-right: 10px solid #E43C00;
+  border-top: 16px solid transparent; /* 上のボーダーを透過に指定 */
+  border-bottom: 16px solid transparent; /* 下のボーダーを透過に指定 */
+  position: absolute;
+  top: 0;
+  margin-left: -50px;
+  }
+
+.c-header--gray{
+  height: 62px;
+  box-shadow: 0px 3px 6px #00000029;
+  min-width: 320px;
+  position: relative;
+  z-index: 1;
+  background-color: #5A5A5A;
+}
+
+.c-header__text{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 13px 0;
+  color:#E43C00;
+}
+
+@media (max-width: 374px) {
+  .c-header__text{
+    margin-left: 50px;
+  }
+
+  .c-header__text--offset{
+    margin-left: unset;
+  }
+}

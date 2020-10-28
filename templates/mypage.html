@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マイページ</title>
+  <link rel="stylesheet" href="../assets/css/pages/mypage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="c-header">
+    <button class="c-header__btn">戻る</button>
+    <h1 class="c-header__text">マイページ</h1>
+  </header>
+
+  <div class="p-linkLabel">
+    <button class="p-linkLabel__btn c-button">
+      <div class="p-linkLabel__text">お気に入りクーポンを見る</div>
+    </button>
+    <div class="p-linkLabel__num">３</div>
+  </div>
+  <div class="p-linkLabel">
+    <button class="p-linkLabel__btn c-button">
+      <div class="p-linkLabel__text">取り置きの商品を受け取る</div>
+    </button>
+    <div class="p-linkLabel__num">１</div>
+  </div>
+
+  <!-- body コンポーネント -->
+  <div class="l-main">
+    <div class="p-body__img">
+      <img src="../assets/image/reading.png" />
+    </div>
+    <div class="p-body__title">
+      お買い物時にこの画面を<br />
+      レジにてご提示ください<br />
+      クーポンをまとめて利用できます
+    </div>
+    <div class="p-text--green">山田太郎<span class="p-text--green">　様</span></div>
+    <div class="p-box u-mb-8">
+      <div class="p-body_text">会員<br />番号</div>
+      <img src="https://placehold.jp/270x41.png" class="p-body__barcode" />
+    </div>
+    <div class="p-body__num">XXXXXXXXXXXXXXX</div>
+    <div class="p-box u-mb-5">
+      <div class="p-body__mark">P</div>
+      <div class="p-body__point">200</div>
+      <div class="p-body__text--micro">ポイント</div>
+    </div>
+    <div class="p-body__text--small">
+      ※オンラインショップへのポイント反映には<br />
+      最大24時間かかることがあります
+    </div>
+    <div class="p-body__label">
+      <div class="p-body__labelText--large">店舗での取置が可能です</div>
+      <button class="p-body__labelBtn">店舗で取置する</button>
+      <div class="p-body__labelText--small">取置OKの商品限定です</div>
+    </div>
+  </div>
+
+  <!-- クーポン一覧 -->
+  <div class="l-main--orange">
+    <div class="p-heading">お気に入りクーポン一覧</div>
+  </div>
+  <div class="l-main">
+    <div id='cards'>
+      <!-- ここにカードコンポーネントが展開されます -->
+      <div>
+        <div class="c-topic u-mb-8">
+          <span class="c-topic__mainText">購入時に割引</span><br/>
+          <span class="c-topic__subText">商品をレジにお持ちください</span>
+        </div>
+        <div class="u-mb-16">
+          <div class="c-card__labelContainer">
+            <div class="c-card__label c-card__label--red">
+              <img src="../assets/image/icon_timer.png" class="c-card__labelIcon">
+              <span class="c-card__text">あと１日</span>
+            </div>
+            <div class="c-card__label c-card__label--yellow">
+              <img src="../assets/image/icon_triangle.png" class="c-card__labelIcon">
+              <span class="c-card__text">売り切れ間近</span>
+            </div>
+          </div>
+          <div class="c-card__main">
+            <img class='c-card__image' src='https://placehold.jp/350x350.png'/>
+            <button data-modal-id='modal-1' class="c-card__btn c-button__btn--gray">お気に入りに追加済み</button>
+          </div>
+        </div>
+
+        <button class="c-button u-mb-20">
+            <img src="../assets/image/icon_cart.png" class="c-button__icon">
+            <span class="c-button__text">取置・オンラインで購入</span>
+        </button>
+      </div>
+    </div>
+
+    <div id='cards' class="p-back__overlap">
+      <!-- ここにカードコンポーネントが展開されます -->
+      <div>
+        <div class="c-topic u-mb-8">
+          <span class="c-topic__mainText">シークレット</span><br/>
+          <span class="c-topic__subText">クーポンをレジにてご提示ください</span>
+        </div>
+        <div class="u-mb-16">
+          <p class="c-card__caution">
+            店頭には一切陳列しておりません<br>
+            ご購入の際はスタッフまでお申し付けください
+          </p>
+          <div class="c-card__labelContainer">
+            <div class="c-card__label c-card__label--red">
+              <img src="../assets/image/icon_timer.png" class="c-card__labelIcon">
+              <span class="c-card__text">あと１日</span>
+            </div>
+            <div class="c-card__label c-card__label--yellow">
+              <img src="../assets/image/icon_triangle.png" class="c-card__labelIcon">
+              <span class="c-card__text">売り切れ間近</span>
+            </div>
+          </div>
+          <div class="c-card__main">
+            <img class='c-card__image' src='https://placehold.jp/350x350.png'/>
+            <button data-modal-id='modal-2' class="c-card__btn c-button__btn--gray">お気に入りに追加済み</button>
+          </div>
+        </div>
+
+        <button class="c-button u-mb-20">
+          <img src="../assets/image/icon_cart.png" class="c-button__icon">
+          <span class="c-button__text">取置・オンラインで購入</span>
+        </button>
+      </div>
+    </div>
+
+    <div id='cards'>
+      <!-- ここにカードコンポーネントが展開されます -->
+      <div>
+        <div class="c-topic u-mb-8">
+          <span class="c-topic__mainText">オンライン限定のクーポン</span><br/>
+          <span class="c-topic__subText">オンラインショップでご購入ください</span>
+        </div>
+        <div class="u-mb-16">
+          <div class="c-card__labelContainer">
+            <div class="c-card__label c-card__label--red">
+              <img src="../assets/image/icon_timer.png" class="c-card__labelIcon">
+              <span class="c-card__text">あと１日</span>
+            </div>
+            <div class="c-card__label c-card__label--yellow">
+              <img src="../assets/image/icon_triangle.png" class="c-card__labelIcon">
+              <span class="c-card__text">売り切れ間近</span>
+            </div>
+          </div>
+          <div class="c-card__main">
+            <img class='c-card__image' src='https://placehold.jp/350x350.png'/>
+            <button class="c-card__btn c-button__btn--gray">お気に入りに追加済み</button>
+          </div>
+        </div>
+
+        <button class="c-button u-mb-20">
+            <img src="../assets/image/icon_cart.png" class="c-button__icon">
+            <span class="c-button__text">取置・オンラインで購入</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+    <!-- menu コンポーネント -->
+    <div class="l-main--orange">
+      <div class="p-heading">LINEマイメニュー</div>
+    </div>
+
+    <div class="l-main">
+      <div class="p-text--green">初めての方へ導線</div>
+      <table class="p-menu__table">
+        <tr class="p-menu__tr">
+          <td class="p-menu__td">ポイント統合</td>
+          <td class="p-menu__td">オンライン統合</td>
+        </tr>
+        <tr>
+          <td class="p-menu__td">マイプロフィール</td>
+          <td class="p-menu__td">購入履歴</td>
+        </tr>
+        <tr>
+          <td class="p-menu__td">FAQ</td>
+          <td class="p-menu__td">利用規約</td>
+        </tr>
+      </table>
+      <button class="p-menu__btn">
+        <div class="p-menu__mark">?</div>
+        お問い合わせ
+      </button>
+    </div>
+
+  <footer>
+  </footer>
+</body>
+</html>

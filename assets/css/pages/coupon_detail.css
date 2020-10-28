@@ -1,0 +1,44 @@
+@import url("../foundations/destyle.css");
+@import url("../layouts/layout.css");
+@import url("../components/header.css");
+@import url("../components/topic.css");
+@import url("../components/card.css");
+@import url("../components/counter.css");
+@import url("../components/footer.css");
+@import url("../components/modal.css");
+@import url("../components/linkArea.css");
+@import url("../components/slider.css");
+@import url("../utilities/text.css");
+@import url("../utilities/margin.css");
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.p-box{
+  max-width: 335px;
+  height: 276px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  padding: 25px 15px 0px 15px;
+  margin: 0 auto;
+}
+
+.p-label{
+  max-width: 332px;
+  height: 42px;
+  border: 3px solid #707070;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #626262;
+  margin: 0 auto;
+  padding: 6px 0;
+}
+
+.p-label__abs{
+  position: absolute;
+  top: 0px;
+  left: 18px;
+}

@@ -1,0 +1,37 @@
+.c-button{
+  width: 260px;
+  height: 45px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 100px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.c-button__icon{
+  margin: -2px;
+  width: 28.63px;
+  height: 25.16px;
+}
+
+.c-button__large{
+  width: 100%;
+  height: 60px;
+  border: 3px solid #FE5700;
+  border-radius: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.c-button__largeText{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #E43C00;
+}
+
+.c-button__text{
+  font-size: 16px;
+  font-weight: bold;
+  color:#E43C00;
+}

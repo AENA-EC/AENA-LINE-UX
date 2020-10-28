@@ -1,0 +1,45 @@
+.c-area{
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.c-area__btn{
+  color: #2384E5;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  width: 172px;
+  height: 29px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 6px 2px;
+  margin: 0 0 0 auto;
+  display: flex;
+}
+
+.c-area__btnText{
+  padding: 0px 8px 0px 4px;
+  font-size: 13px;
+}
+
+.c-area__list{
+  text-align: left;
+  color: #2384E5;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.c-area__select{
+  text-align: left;
+  color: #191919;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.c-area__heading{
+  text-align: left;
+  color: #B1B1B1;
+  font-size: 13px;
+}
+

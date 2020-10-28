@@ -1,0 +1,27 @@
+@import url("../foundations/destyle.css");
+@import url("../layouts/layout.css");
+@import url("../components/header.css");
+@import url("../components/topic.css");
+@import url("../components/card.css");
+@import url("../components/footer.css");
+@import url("../components/picture.css");
+@import url("../components/linkArea.css");
+@import url("../components/modal.css");
+@import url("../utilities/text.css");
+@import url("../utilities/margin.css");
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.p-dailyCoupon__caption{
+  display: flex;
+  margin: 0 auto;
+}
+
+.p-dailyCoupon__text{
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #170202;
+}

@@ -1,0 +1,17 @@
+@import url("../foundations/destyle.css");
+@import url("../layouts/layout.css");
+@import url("../components/header.css");
+@import url("../components/topic.css");
+@import url("../components/card.css");
+@import url("../components/button.css");
+@import url("../components/counter.css");
+@import url("../components/menu.css");
+@import url("../components/footer.css");
+@import url("../components/modal.css");
+@import url("../components/linkArea.css");
+@import url("../utilities/text.css");
+@import url("../utilities/margin.css");
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
